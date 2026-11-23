@@ -220,71 +220,6 @@ crop-disease-detection/
 └── assets/                             # Screenshots for this README
 ```
 
----
-
-## 🚀 Installation and Usage
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-```
-
-**2. Create a virtual environment and install dependencies**
-```bash
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # macOS / Linux
-pip install -r requirements.txt
-```
-
-`requirements.txt`
-```text
-tensorflow
-streamlit
-numpy
-pandas
-pillow
-scikit-learn
-matplotlib
-seaborn
-kagglehub
-```
-
-**3. (Optional) Retrain the model.** Open `crop_disease_training_v2.ipynb` and run all cells. This downloads the datasets via `kagglehub` (a Kaggle login may be required), trains the model and writes `model_output/`. Skip this step if `model_output/` is already in the repo.
-
-**4. Run the app**
-```bash
-streamlit run app.py
-```
-Then open the local URL shown in the terminal, upload or capture a clear leaf photo, and read the prediction and advisory.
-
----
-
-## 🛠 Troubleshooting
-
-**The app shows "Loading model..." for a long time.** The first load is slow because importing TensorFlow takes 20–60 seconds on a CPU laptop; the model file itself is small. After the first load the model is cached and predictions take about a second. To speed it up:
-
-- Create `.streamlit/config.toml`:
-  ```toml
-  [server]
-  fileWatcherType = "none"
-  runOnSave = false
-  ```
-- Add these lines at the very top of `app.py`:
-  ```python
-  import os
-  os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
-  os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
-  ```
-- Don't restart the Streamlit server between tests; restarting clears the cache.
-
-**"Some model files are missing."** Copy the `model_output/` folder next to `app.py`.
-
-**Wrong or low-confidence prediction.** Use a close-up, well-lit photo of a single leaf on a plain background.
-
----
-
 ## ⚠️ Limitations
 
 - Supports only **3 crops and 5 disease/healthy classes** (tomato, potato, bell pepper).
@@ -292,29 +227,8 @@ Then open the local URL shown in the terminal, upload or capture a clear leaf ph
 - The model was trained on up to 600 images per class for CPU speed; the 95% figure is on the PlantVillage-style test split, not real field data.
 - Advisory text is **general guidance only**, not a replacement for a professional agricultural diagnosis. Always consult a local agriculture expert before applying any treatment.
 
-## 🔮 Future Work
 
-- Fine-tune the top MobileNetV2 layers and train on the full PlantVillage set.
-- Add more crops and diseases.
-- Collect real field images to improve robustness.
-- Add Grad-CAM heatmaps to show which part of the leaf drove the prediction.
-- Support regional languages (Hindi) in the advisory.
-- Deploy on Streamlit Community Cloud / Hugging Face Spaces, or convert to TensorFlow Lite for mobile.
-
-## 👥 Team
-
-- **Suhani Saxena**
-- **Urvashi Chavhan**
-- **Vaidika Pandey**
-
-**Guide:** Prof. Shubham Sharma
-Mahakal Institute of Technology, Ujjain (RGPV, Bhopal)
-
-## 📄 License
-
-Released under the MIT License. See `LICENSE` for details.
-
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [PlantVillage dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)
 - [Intel Image Classification dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)
