@@ -21,11 +21,8 @@ Built with **MobileNetV2 transfer learning (TensorFlow / Keras)** and served thr
 7. [Dataset](#-dataset)
 8. [Results](#-results)
 9. [Project Structure](#-project-structure)
-10. [Installation and Usage](#-installation-and-usage)
-11. [Troubleshooting](#-troubleshooting)
-12. [Limitations](#-limitations)
-13. [Future Work](#-future-work)
-14. [Team](#-team)
+10. [Limitations](#-limitations)
+
 
 ---
 
