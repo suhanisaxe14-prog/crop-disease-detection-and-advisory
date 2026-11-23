@@ -13,15 +13,14 @@ Built with **MobileNetV2 transfer learning (TensorFlow / Keras)** and served thr
 
 ## 📌 Table of Contents
 1. [Features](#-features)
-2. [Demo](#-demo)
-3. [Supported Classes](#-supported-classes)
-4. [System Architecture](#-system-architecture)
-5. [Workflow](#-workflow)
-6. [Model Architecture](#-model-architecture)
-7. [Dataset](#-dataset)
-8. [Results](#-results)
-9. [Project Structure](#-project-structure)
-10. [Limitations](#-limitations)
+2. [Supported Classes](#-supported-classes)
+3. [System Architecture](#-system-architecture)
+4. [Workflow](#-workflow)
+5. [Model Architecture](#-model-architecture)
+6. [Dataset](#-dataset)
+7. [Results](#-results)
+8. [Project Structure](#-project-structure)
+9. [Limitations](#-limitations)
 
 
 ---
@@ -36,13 +35,6 @@ Built with **MobileNetV2 transfer learning (TensorFlow / Keras)** and served thr
 - **Probability chart** showing the model's score for every class.
 - **Lightweight**: MobileNetV2 at 160×160 trains and runs on a normal CPU, no GPU needed.
 
-## 🎬 Demo
-
-> Add screenshots here after you run the app (put images in an `assets/` folder).
-
-| Upload and predict | Advisory | Non-leaf rejection |
-|---|---|---|
-| `assets/demo_prediction.png` | `assets/demo_advisory.png` | `assets/demo_not_leaf.png` |
 
 ## 🌱 Supported Classes
 
