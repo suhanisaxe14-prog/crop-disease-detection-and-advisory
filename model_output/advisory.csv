@@ -1,0 +1,7 @@
+class_name,symptoms,prevention,next_steps
+Tomato_Early_blight,"Brown spots with concentric rings on older leaves, yellowing around the spots.","Rotate crops, avoid overhead watering, remove infected plant debris, keep spacing for airflow.",Remove badly affected leaves and consult a local agriculture officer about a suitable fungicide.
+Tomato_Late_blight,"Dark, water-soaked patches on leaves that spread quickly, often with whitish growth in humid weather.","Use disease-free seed/seedlings, avoid wet foliage, ensure good drainage and airflow.",Isolate or remove infected plants quickly and seek local expert advice on treatment.
+Tomato_healthy,No visible disease symptoms detected.,"Continue regular watering, balanced nutrition and routine monitoring of leaves.",No action needed. Re-check if new spots or discoloration appear.
+Potato___Early_blight,"Brown spots with concentric rings on older leaves, yellowing around the spots.","Rotate crops, avoid overhead watering, remove infected plant debris, keep spacing for airflow.",Remove badly affected leaves and consult a local agriculture officer about a suitable fungicide.
+Pepper__bell___Bacterial_spot,"Small dark water-soaked spots on leaves that may turn brown or black, sometimes with yellow halos.","Use clean seed, avoid working in wet fields, rotate crops, disinfect tools.","Remove infected leaves, avoid overhead irrigation and consult a local expert."
+Not_a_leaf,-,-,"This image is not a supported crop leaf. Upload a clear photo of a single tomato, potato or bell pepper leaf."
